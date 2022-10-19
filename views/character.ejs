@@ -1,0 +1,30 @@
+<%- include('./partials/head.ejs') %> 
+
+<%- include('./partials/header.ejs') %> 
+
+<div id="card" class="mt-5">
+
+    <img class="img-character" src=<%= characterInfo[0].img %>  alt="Character image">
+
+    <div class="character-info">
+
+        <h1 class="character-name"><%= characterInfo[0].name %></h1> 
+        <hr>
+        
+        <h2 class="info">Estado</h2>
+        <h3 class="feature"><%= characterInfo[0].status %></h3>
+
+        <h2 class="info">Especie</h2>
+        <h3 class="feature"><%= characterInfo[0].species %></h3>
+        
+        <h2 class="info">Última localización</h2>
+        <h3 class="feature"><%= characterInfo[0].lastLocation %></h3>
+        
+    </div>
+
+    <a href="/">Pulsa aquí para realizar otra búsqueda.</a>
+
+</div>
+
+
+<%- include('./partials/footer.ejs') %> 

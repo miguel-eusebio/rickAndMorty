@@ -1,0 +1,148 @@
+/* LIST.EJS */
+#header nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #00ADC3;
+}
+
+#header nav img {
+    display: block;
+    margin: 5px auto;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.main-content {
+    display: block;
+    margin: 0px auto;
+    width: 65%;
+    max-width: 1500px;
+    height: 37rem;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.form-container h1 {
+    font-size: 5.5rem;
+}
+
+.wrap-form h3 {
+    font-size: 2.75rem;
+}
+
+.float-container {
+    float: right;    
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.float-container img{
+    height: 35rem;
+}
+
+footer {
+    background-color: #00ADC3;
+    bottom: 0;
+    position: absolute;
+    height: 4.5rem;
+    width: 100%;
+}
+
+footer div{
+    color: white;
+    display: block;
+    font-weight: bolder;
+    margin: 0px auto;
+    width: 15rem;
+}
+
+footer p{
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+footer img{
+    display: inline-block;
+    height: 2.5rem;
+}
+
+/* RESPONSIVE LIST.EJS*/
+@media (max-width: 1451px) {
+    .float-container img{
+        height: 15rem;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .float-container {
+        float: none;    
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+
+    .form-container h1 {
+        font-size: 1.5rem;
+        display: block;
+        width: fit-content;
+        margin: 0px auto;
+    }
+    
+    .wrap-form h3 {
+        font-size: 1.75rem;
+    }
+
+    .main-content {
+        width: 40%;
+    }
+}
+
+@media (max-width: 775px) {
+    .main-content {
+        width: 90%;
+    }
+    .main-content {
+        height: auto;
+    }
+}
+
+
+
+/* CHARACTERS.EJS */
+#card {
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    display: block;
+    width: 19rem;
+    height: auto;
+    margin: 0px auto;
+}
+
+.img-character {
+    display: block;
+    width: auto;
+    margin: 0px auto;
+}
+
+.character-name {
+    display: block;
+    width: fit-content;
+    margin: 0px auto;
+    font-size: 2.2rem;
+}
+
+.info {
+    font-size: 1.5rem;
+}
+
+.feature {
+    font-size: 16px;
+}
+
+
+/* RESPONSIVE CHARACTER.EJS */
+@media (max-width: 820px) {
+    #card {
+        width: 85%;
+    }
+}

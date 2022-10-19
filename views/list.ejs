@@ -1,0 +1,30 @@
+<%- include('./partials/head.ejs') %> 
+
+    <div class="main-container">
+
+        <%- include('./partials/header.ejs') %> 
+
+        <main class="main-content mt-5">
+
+                <div class="float-container">
+                    <img class="portal-img" src="../images/portalRickAndMorty.png" alt="Portal Rick And Morty">
+                </div>
+
+                <div class="form-container ms-3 mb-3">
+                    <h1 class="title">Rick & Morty API</h1>
+                    <div class="wrap-form mt-5">
+                        <h3 class="subtitle">Encuentra divertidos y extraños personajes.</h3>
+                        <p>Digita un número (ID) entre el 1 al 826 y descubre información acerca de ellos.</p>
+                        <form action="/" method="post">
+                            <label for="city">ID:</label>
+                            <input type="text" name="characterId" autofocus>
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+        </main>
+
+    </div>
+
+<%- include('./partials/footer.ejs') %> 
